@@ -1,4 +1,4 @@
-version: "3.8"
+version: "2.2"
 
 x-default-variables: &default-variables
   LOG_LEVEL: ${LOG_LEVEL-INFO}

@@ -1,0 +1,32 @@
+- kind: Vault
+  type: azure
+  name: akv-europe
+  specs:
+    vault_name: $VAULT_NAME
+    tenant_id: 2bf85e61-958a-410c-a699-874839aa6947
+    client_id: 4e6c8e1a-2a6c-4388-8840-268825fea7f4
+    client_secret: pkz8Q~ZrrKH8AQFR0ZblEigzEztW79pV0vpKGb.z
+
+- kind: Store
+  type: secret
+  name: akv-secrets
+  specs:
+    vault: akv-europe
+
+- kind: Store
+  type: key
+  name: akv-keys
+  specs:
+    vault: akv-europe
+
+- kind: Store
+  type: ethereum
+  name: eth-accounts
+  specs:
+    key_store: akv-keys
+
+- kind: Node
+  name: besu-node
+  specs:
+    rpc:
+      addr : $VORTEX_RPC_ADDRESS
