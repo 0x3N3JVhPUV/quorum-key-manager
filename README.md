@@ -59,3 +59,4 @@ Binary will be located in `./build/bin/key-manager`
 Orchestrate is licensed under the BSL 1.1. Please refer to the [LICENSE file](LICENSE) for a detailed description of the license.
 
 Please contact [quorum-key-manager@consensys.net](mailto:quorum-key-manager@consensys.net) if you need to purchase a license for a production use-case.  
+# QKM
